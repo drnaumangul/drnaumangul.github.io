@@ -37,12 +37,20 @@
             opacity: 0.9;
             margin-bottom: 15px;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 3px solid white;
+        }
         .badge {
             display: inline-block;
             background: #2e7d32;
-            padding: 5px 15px;
+            padding: 8px 18px;
             border-radius: 25px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             margin: 5px;
         }
         .section {
@@ -89,6 +97,12 @@
             color: #666;
             font-size: 0.8rem;
         }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -105,7 +119,8 @@
 <body>
     <header>
         <h1>Dr. Nauman Gul, MBBS</h1>
-        <h2>Medical Doctor | DHA Licensed | Cardiology Specialist in Training</h2><img src="avatar.jpg" alt="Dr. Nauman Gul" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-top: 20px; border: 3px solid white;">
+        <h2>Medical Doctor | DHA Licensed | Cardiology Specialist in Training</h2>
+        <img src="avatar.jpg" alt="Dr. Nauman Gul" class="profile-img">
         <div>
             <span class="badge">🇵🇰 NRE Pakistan - Active</span>
             <span class="badge">🇦🇪 DHA Dubai - Active</span>
@@ -114,100 +129,51 @@
     </header>
 
     <div class="container">
-        <!-- About Section -->
         <div class="section">
             <h3>About Me</h3>
             <p>Medical doctor (MBBS) with active licenses in <strong>Pakistan</strong> and <strong>Dubai (DHA)</strong>. First-author SCI publication accepted. Currently completing Master's in Medical Sciences at <strong>Xuzhou Medical University</strong>, China. Relocating to <strong>Dubai, UAE</strong>.</p>
         </div>
 
-        <!-- Education Section -->
         <div class="section">
             <h3>Education</h3>
             <table>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
-                <tr>
-                    <td><strong>MBBS</strong></td>
-                    <td>Hebei North University, China</td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td><strong>Master's in Medical Sciences</strong> (Cardiology focus)</td>
-                    <td>Xuzhou Medical University, China</td>
-                    <td>Completing 2026</td>
-                </tr>
+                <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+                <tr><td><strong>MBBS</strong></td><td>Hebei North University, China</td><td>2022</td></tr>
+                <tr><td><strong>Master's in Medical Sciences</strong> (Cardiology)</td><td>Xuzhou Medical University, China</td><td>Completing 2026</td></tr>
             </table>
         </div>
 
-        <!-- Licenses Section -->
         <div class="section">
             <h3>Medical Licenses</h3>
             <table>
-                <tr>
-                    <th>License</th>
-                    <th>Status</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td><strong>NRE Pakistan</strong></td>
-                    <td class="license-active">✅ Active</td>
-                    <td>Pakistan</td>
-                </tr>
-                <tr>
-                    <td><strong>DHA Dubai</strong></td>
-                    <td class="license-active">✅ Active</td>
-                    <td>UAE (Relocating)</td>
-                </tr>
+                <tr><th>License</th><th>Status</th><th>Region</th></tr>
+                <tr><td><strong>NRE Pakistan</strong></td><td class="license-active">✅ Active</td><td>Pakistan</td></tr>
+                <tr><td><strong>DHA Dubai</strong></td><td class="license-active">✅ Active</td><td>UAE - Relocating</td></tr>
             </table>
         </div>
 
-        <!-- Research Section -->
         <div class="section">
             <h3>Research & Publications</h3>
             <table>
-                <tr>
-                    <th>Publication</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>SCI-indexed paper</td>
-                    <td><strong>First Author</strong></td>
-                    <td class="license-active">✅ Accepted</td>
-                </tr>
-                <tr>
-                    <td>SCI-indexed paper</td>
-                    <td>Co-Author</td>
-                    <td class="license-active">✅ Published</td>
-                </tr>
-                <tr>
-                    <td>SCI-indexed papers (2 papers)</td>
-                    <td>Co-Author</td>
-                    <td>Under Review</td>
-                </tr>
+                <tr><th>Publication</th><th>Role</th><th>Status</th></tr>
+                <tr><td>SCI-indexed paper</td><td><strong>First Author</strong></td><td class="license-active">✅ Accepted</td></tr>
+                <tr><td>SCI-indexed paper</td><td>Co-Author</td><td class="license-active">✅ Published</td></tr>
+                <tr><td>SCI-indexed papers (2 papers)</td><td>Co-Author</td><td>Under Review</td></tr>
             </table>
         </div>
 
-        <!-- Clinical Experience Section -->
         <div class="section">
             <h3>Clinical Experience</h3>
-            <ul style="margin-left: 20px;">
-                <li><strong>Cardiology (CCU & Echocardiography)</strong> - Coronary Care Unit – cardiac emergencies (MI, arrhythmias), Echocardiography – patient preparation and image acquisition</li>
-                <li><strong>House Officer (1 Year)</strong> - Outpatient and emergency department, Acute and chronic medical conditions, Procedures: Foley catheter, NG tube, ascitic/pleural tapping</li>
+            <ul>
+                <li><strong>Cardiology (CCU & Echocardiography)</strong> - Coronary Care Unit, cardiac emergencies, echocardiography</li>
+                <li><strong>House Officer (1 Year)</strong> - OPD, emergency, procedures</li>
             </ul>
         </div>
 
-        <!-- Languages Section -->
         <div class="section">
             <h3>Languages</h3>
             <table>
-                <tr>
-                    <th>Language</th>
-                    <th>Proficiency</th>
-                </tr>
+                <tr><th>Language</th><th>Proficiency</th></tr>
                 <tr><td>English</td><td>Fluent</td></tr>
                 <tr><td>Urdu</td><td>Fluent</td></tr>
                 <tr><td>Pashto</td><td>Fluent</td></tr>
@@ -215,7 +181,6 @@
             </table>
         </div>
 
-        <!-- Contact Section -->
         <div class="contact-info">
             <h3>Contact</h3>
             <p>📧 <strong>drnoumankhan55@gmail.com</strong></p>
